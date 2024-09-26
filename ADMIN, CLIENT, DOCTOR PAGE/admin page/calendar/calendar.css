@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    color: #007bff;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header h2 {
+    margin-bottom: 10px;
+}
+
+.date-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.calendar-container {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-nav button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.view-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.view-buttons button {
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    background-color: transparent;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-buttons button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+}
